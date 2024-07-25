@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Odontopediatra</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Odontopediatra</h1>
+        <form id="cadastroOdontopediatraForm" action="processos/processarCadastroOdontopediatra.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="crm">CRM:</label>
+            <input type="text" id="crm" name="crm" required>
+            
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" name="especialidade" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">Criar Conta</button>
+        </form>
+    </div>
+    <script src="scripts/validateOdontopediatra.js"></script>
+</body>
+</html>

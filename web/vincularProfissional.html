@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular Profissional</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vincular Profissional</h1>
+        <form id="vincularProfissionalForm" action="processos/processarVinculacao.php" method="post">
+            <div class="form-group">
+                <label for="profissional">Selecione o Profissional:</label>
+                <select id="profissional" name="profissional" required>
+                    <!-- Lista de profissionais será carregada aqui via JavaScript -->
+                </select>
+            </div>
+            <button type="submit">Confirmar Vínculo</button>
+        </form>
+    </div>
+    <script src="scripts/vincularProfissional.js"></script>
+</body>
+</html>

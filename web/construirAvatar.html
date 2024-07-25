@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção do Avatar</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Construção do Avatar</h1>
+        <form id="avatarForm">
+            <div class="form-group">
+                <label for="corPele">Cor da Pele:</label>
+                <select id="corPele" name="corPele">
+                    <option value="clara">Clara</option>
+                    <option value="media">Média</option>
+                    <option value="escura">Escura</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="formatoOlhos">Formato dos Olhos:</label>
+                <select id="formatoOlhos" name="formatoOlhos">
+                    <option value="redondos">Redondos</option>
+                    <option value="amendoados">Amendoados</option>
+                    <option value="puxados">Puxados</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="corOlhos">Cor dos Olhos:</label>
+                <select id="corOlhos" name="corOlhos">
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                    <option value="castanho">Castanho</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="boca">Boca:</label>
+                <select id="boca" name="boca">
+                    <option value="sorridente">Sorridente</option>
+                    <option value="seria">Séria</option>
+                    <option value="triste">Triste</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cabelo">Cabelo:</label>
+                <select id="cabelo" name="cabelo">
+                    <option value="curto">Curto</option>
+                    <option value="medio">Médio</option>
+                    <option value="longo">Longo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="roupa">Roupa:</label>
+                <select id="roupa" name="roupa">
+                    <option value="camisa">Camisa</option>
+                    <option value="vestido">Vestido</option>
+                    <option value="calca">Calça</option>
+                </select>
+            </div>
+            <button type="submit">Salvar Avatar</button>
+        </form>
+        <div class="avatar-preview">
+            <h2>Pré-visualização do Avatar</h2>
+            <div id="avatarVisualizacao">
+                <!-- A visualização dinâmica do avatar será atualizada aqui -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts/validateAvatar.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
