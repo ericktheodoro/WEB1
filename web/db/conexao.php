@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "douglas#1981";
+$password = "";
 $dbname = "web1";
 
 // Cria a conexão
@@ -12,3 +12,4 @@ if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
 ?>
+

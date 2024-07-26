@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construção do Avatar</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/avatar.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="cadastroCrianca.html">Cadastro de Criança</a></li>
+            <li><a href="construirAvatar.html">Construir Avatar</a></li>
+            <li><a href="cadastroOdonto.html">Cadastro de Odontopediatra</a></li>
+            <li><a href="vincularProfissional.html">Vincular Profissional</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>Construção do Avatar</h1>
         <form id="avatarForm">
@@ -60,12 +69,6 @@
             </div>
             <button type="submit">Salvar Avatar</button>
         </form>
-        <div class="avatar-preview">
-            <h2>Pré-visualização do Avatar</h2>
-            <div id="avatarVisualizacao">
-                <!-- A visualização dinâmica do avatar será atualizada aqui -->
-            </div>
-        </div>
     </div>
     <script src="scripts/validateAvatar.js"></script>
     <script src="scripts/scripts.js"></script>
