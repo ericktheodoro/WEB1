@@ -52,7 +52,7 @@ body {
 header {
     text-align: center;
     padding: 100px 20px 20px; /* Ajuste para o espaço da navbar fixa */
-    color: #9c1414;
+    color: #000000;
 }
 
 section {
@@ -71,6 +71,9 @@ section h2 {
     margin-top: 0;
 }
 
+
+
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -84,6 +87,27 @@ section h2 {
 
 .button:hover {
     background-color: #0056b3;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #4C489D;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 2px 2px #5C5696;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: #4C489D;
+    color: #fff;
 }
 
 footer {
@@ -110,7 +134,6 @@ form {
     display: flex;
     flex-direction: column;
 }
-
 
 
 label {

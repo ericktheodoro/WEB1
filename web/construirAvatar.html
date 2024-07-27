@@ -22,55 +22,72 @@
             <div class="form-group">
                 <label for="corPele">Cor da Pele:</label>
                 <select id="corPele" name="corPele">
-                    <option value="clara">Clara</option>
-                    <option value="media">Média</option>
-                    <option value="escura">Escura</option>
+                    <option value="clara" data-image="images/branco.png">Clara</option>
+                    <option value="media" data-image="images/pardo.png">Média</option>
+                    <option value="escura" data-image="images/preta.png">Escura</option>
                 </select>
+                <img id="corPeleImage" src="images/preta.png" alt="Imagem da Cor da Pele">
             </div>
             <div class="form-group">
                 <label for="formatoOlhos">Formato dos Olhos:</label>
                 <select id="formatoOlhos" name="formatoOlhos">
-                    <option value="redondos">Redondos</option>
-                    <option value="amendoados">Amendoados</option>
-                    <option value="puxados">Puxados</option>
+                    <option value="redondos" data-image="images/redondos.png">Redondos</option>
+                    <option value="amendoados" data-image="images/formatoOlhos_amendoados.png">Amendoados</option>
+                    <option value="puxados" data-image="images/formatoOlhos_puxados.png">Puxados</option>
                 </select>
+                <img id="formatoOlhosImage" src="images/redondos.png" alt="Imagem do Formato dos Olhos">
             </div>
             <div class="form-group">
                 <label for="corOlhos">Cor dos Olhos:</label>
                 <select id="corOlhos" name="corOlhos">
-                    <option value="azul">Azul</option>
-                    <option value="verde">Verde</option>
-                    <option value="castanho">Castanho</option>
+                    <option value="azul" data-image="images/corOlhos_azul.png">Azul</option>
+                    <option value="verde" data-image="images/corOlhos_verde.png">Verde</option>
+                    <option value="castanho" data-image="images/castanho.png">Castanho</option>
                 </select>
+                <img id="corOlhosImage" src="images/castanho.png" alt="Imagem da Cor dos Olhos">
             </div>
             <div class="form-group">
                 <label for="boca">Boca:</label>
                 <select id="boca" name="boca">
-                    <option value="sorridente">Sorridente</option>
-                    <option value="seria">Séria</option>
-                    <option value="triste">Triste</option>
+                    <option value="sorridente" data-image="images/feliz.png">Sorridente</option>
+                    <option value="seria" data-image="images/boca_seria.png">Séria</option>
+                    <option value="triste" data-image="images/boca_triste.png">Triste</option>
                 </select>
+                <img id="bocaImage" src="images/feliz.png" alt="Imagem da Boca">
             </div>
             <div class="form-group">
                 <label for="cabelo">Cabelo:</label>
                 <select id="cabelo" name="cabelo">
-                    <option value="curto">Curto</option>
-                    <option value="medio">Médio</option>
-                    <option value="longo">Longo</option>
+                    <option value="curto" data-image="images/curto.png">Curto</option>
+                    <option value="medio" data-image="images/cabelo_medio.png">Médio</option>
+                    <option value="longo" data-image="images/cabelo_longo.png">Longo</option>
                 </select>
+                <img id="cabeloImage" src="images/curto.png" alt="Imagem do Cabelo">
             </div>
             <div class="form-group">
                 <label for="roupa">Roupa:</label>
                 <select id="roupa" name="roupa">
-                    <option value="camisa">Camisa</option>
-                    <option value="vestido">Vestido</option>
-                    <option value="calca">Calça</option>
+                    <option value="camisa" data-image="images/camisa.png">Camisa</option>
+                    <option value="vestido" data-image="images/roupa_vestido.png">Vestido</option>
+                    <option value="calca" data-image="images/roupa_calca.png">Calça</option>
                 </select>
+                <img id="roupaImage" src="images/camisa.png" alt="Imagem da Roupa">
             </div>
-            <button type="submit">Salvar Avatar</button>
+            <a href="avatarExibicao.html" class="btn">Salvar Avatar</a>
         </form>
     </div>
     <script src="scripts/validateAvatar.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script>
+        // Função para atualizar a imagem com base na seleção
+        document.querySelectorAll('select').forEach(select => {
+            select.addEventListener('change', function() {
+                const imageId = `${this.id}Image`;
+                const image = document.getElementById(imageId);
+                const selectedOption = this.options[this.selectedIndex];
+                image.src = selectedOption.getAttribute('data-image');
+            });
+        });
+    </script>
 </body>
 </html>
